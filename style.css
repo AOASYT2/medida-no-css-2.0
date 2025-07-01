@@ -1,0 +1,153 @@
+/* Unidades relativas à viewport */
+html {
+    font-size: 16px; /* Base para as unidades em */
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 5vh; /* vh - viewport height */
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%; /* % - percentual */
+    padding: 2em; /* em - relativo ao font-size do pai */
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Unidades absolutas e relativas */
+header {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+h1 {
+    font-size: 3rem; /* rem - relativo ao font-size do html */
+    color: #2c3e50;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 2em; /* em - relativo ao font-size do pai */
+    color: #3498db;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #2c3e50;
+}
+
+p {
+    font-size: 1em; /* Base do html */
+    margin-bottom: 1em;
+}
+
+/* Seções com diferentes unidades */
+.descricao {
+    width: 80%;
+    padding: 2em;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.regras {
+    width: 50vw; /* vw - viewport width */
+    height: auto;
+    margin: 2em auto;
+    padding: 1.5em;
+    background-color: #e8f4f8;
+    border-left: 5px solid #3498db;
+}
+
+.regras ul {
+    padding-left: 1.5em;
+}
+
+/* Botão com unidades específicas */
+.botao-inscricao {
+    display: block;
+    width: 200px; /* px - pixels */
+    height: 40px; /* px - pixels */
+    padding: 10px 20px; /* px - pixels */
+    font-size: 1em;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 2em auto;
+    transition: background-color 0.3s;
+}
+
+.botao-inscricao:hover {
+    background-color: #2980b9;
+}
+
+/* Galeria de imagens */
+.galeria {
+    margin: 2em 0;
+}
+
+.imagens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.imagens img {
+    width: 300px; /* px - pixels */
+    height: auto; /* auto - calculado automaticamente */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.imagens img:hover {
+    transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+    border-top: 1px solid #eee;
+    font-size: 0.9em;
+    color: #7f8c8d;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 1em;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    .descricao {
+        width: 95%;
+    }
+    
+    .regras {
+        width: 95%;
+    }
+    
+    .imagens img {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+}
